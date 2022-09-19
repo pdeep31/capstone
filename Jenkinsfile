@@ -4,6 +4,20 @@ pipeline{
     }
   agent any
   stages {
+      
+           stage('Sonarqube-anaysis') {
+          
+           steps {
+                
+                   sh 'mvn clean verify sonar:sonar \
+  -Dsonar.projectKey=springboot-app \
+  -Dsonar.host.url=http://34.134.159.67:9000 \
+  -Dsonar.login=sqp_9dc0d2981596105753a4ce8b4748b59a40b28c34'
+                   
+                      }
+       }
+      
+      
            stage('Build') {
           
            steps {
