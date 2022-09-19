@@ -1,6 +1,6 @@
 pipeline{  
     environment {
-    registry = "https://hub.docker.com/repository/docker/deepak2910"
+    registry = "deepak2910/capstone"
     }
   agent any
   stages {
