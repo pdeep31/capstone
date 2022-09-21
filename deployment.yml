@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: app
-        image: deepak2910/capstone:0.1
+        image: image_id
         resources:
           requests:
             cpu: 10m
